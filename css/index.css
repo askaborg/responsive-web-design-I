@@ -162,4 +162,84 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+	.page-container {
+		margin: 40px 75px 40px 75px;
+	}
+	
+	.top-container {
+		display: flex;
+		flex-direction: column-reverse;
+		background-color: green;
+	}
+		
+	.items {
+		color: gray;
+		text-decoration: none;
+	}
 
+	.logo {
+		margin: 0px auto 40px auto;
+	}
+
+	.top-header {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.nav-container {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.slogan-container {
+		background-color: red;
+	}
+	.slogan-text {
+		font-size: 5em;
+		background-color: yellow;
+		width: 100%;
+	}
+
+	.slogan-image {
+		display: none;
+	}
+	
+	.slogan-text button {
+		background-color: white;
+		border: 1px solid black;
+		padding: 10px 50px 10px 50px;
+	}
+	
+	.content {
+		border-top: 1px solid black;
+	}
+	
+	.two-columns-container {
+		display: flex;
+		flex-direction: row;
+		margin: 40px 0px 40px 0px;
+	}
+	
+	.middle-img {
+		width: 100%;
+	}
+	
+	.three-columns-container {
+		display: flex;
+		flex-direction: row;
+		margin: 40px 0px 40px 0px;
+	}
+	
+	.footer {
+		border-top: 1px solid black;
+	}
+	
+	.contact {
+		margin: 40px 0px 40px 0px;
+	}
+	
+	.copyright {
+		text-align: center;
+	}
+}
