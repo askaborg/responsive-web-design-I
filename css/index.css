@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 500px) {
 	.page-container {
-		margin: 40px 75px 40px 75px;
+		margin: 40px auto 40px auto;
 	}
 	
 	.top-container {
@@ -289,8 +289,8 @@ h1, h2, h3, h4, h5 {
 	
 	.two-columns-container {
 		display: flex;
-		flex-direction: row;
-		margin: 40px 0px 40px 0px;
+		flex-direction: column;
+		margin: 40px 20px 40px 20px;
 	}
 	
 	.middle-img {
@@ -299,8 +299,8 @@ h1, h2, h3, h4, h5 {
 	
 	.three-columns-container {
 		display: flex;
-		flex-direction: row;
-		margin: 40px 0px 40px 0px;
+		flex-direction: column;
+		margin: 40px 20px 40px 20px;
 	}
 	
 	.footer {
