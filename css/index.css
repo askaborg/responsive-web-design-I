@@ -1,3 +1,249 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.page-container {
+	margin: 40px 75px 40px 75px;
+}
+
+.top-container {
+	display: flex;
+	height: 100%;
+	width:100%;
+}
+
+.nav-container {
+	width: 100%;
+}
+
+.nav-items {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.items {
+	color: gray;
+	text-decoration: none;
+	width: 100%;
+}
+
+.slogan {
+	margin: 100px 0px 80px 0px;
+}
+
+.slogan-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slogan-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 5em;
+	justify-content: center;
+	margin: 60px auto 0px auto;
+}
+
+.slogan-text h1 {
+	margin: 0px 0px 0px 0px;
+}
+
+.slogan-text button {
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px 50px 10px 50px;
+	margin: 0px auto 0px auto;
+}
+
+.content {
+	border-top: 1px solid black;
+}
+
+.two-columns-container {
+	display: flex;
+	flex-direction: row;
+	margin: 40px 20px 40px 0px;
+}
+
+.texts-of-two {
+	margin: 0px 20px 0px 0px;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.three-columns-container {
+	display: flex;
+	flex-direction: row;
+	margin: 40px 0px 40px 0px;
+}
+
+.texts-of-three {
+	margin: 0px 20px 0px 0px;
+}
+
+.footer {
+	border-top: 1px solid black;
+}
+
+.contact {
+	margin: 40px 0px 40px 0px;
+}
+
+.copyright {
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+	.top-container {
+		flex-direction: column-reverse;
+	}
+
+	.logo {
+		margin: 0px auto 40px auto;
+
+	}
+			
+	.slogan {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.slogan-image {
+		display: none;
+	}
+	.slogan-text {
+		display: flex;
+		flex-direction: column;
+		margin: 40px 0px 0px 0px;
+		width: 100%;
+	}
+	
+	.slogan-text button {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logo {
+		margin: 0px auto 20px auto;
+	}
+
+	.nav-container {
+		width: 100%;
+	}
+
+	.nav-items {
+		border-top: 1px solid black;
+		display: block;
+		width: 100%;
+	}
+	
+	.items {
+		border-bottom: 1px solid gray;
+		display: block;
+		height: 70px;
+		padding: 25px 0px 0px 0px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.slogan-text button {
+		margin: 20px 0px 20px 0px;
+	}
+
+	.slogan-text {
+		margin: 40px 0px 40px 0px;
+	}
+
+	.two-columns-container {
+		flex-direction: column;
+	}
+
+	.texts-of-two {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.three-columns-container {
+		flex-direction: column;
+	}
+
+	.texts-of-three {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.content {
+		border-top: 2px solid black;
+	}
+
+	.footer {
+		border-top: 2px solid black;
+	}
+}
